@@ -1,8 +1,8 @@
 {
-    "name": "code-n-click-frontend",
-    "buildCommand": "npm run build",
-    "outputDirectory": "dist",
-    "framework": "vite",
+    "buildCommand": "cd client && npm install && npm run build",
+    "outputDirectory": "client/dist",
+    "installCommand": "npm install",
+    "framework": null,
     "rewrites": [
         {
             "source": "/(.*)",
