@@ -194,7 +194,7 @@ const Hero = () => {
           {/* RIGHT SECTION: Premium Interactive Tech Showcase */}
           <motion.div
             variants={floatVariants}
-            className="relative h-[400px] sm:h-[500px] md:h-[600px] order-2 lg:order-2"
+            className="relative h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] order-2 lg:order-2 flex items-center justify-center"
           >
             {/* Animated background orbs */}
             <motion.div
@@ -275,7 +275,7 @@ const Hero = () => {
                   </div>
 
                   {/* Services cards grid (what we provide) */}
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+                  <div className="grid grid-cols-2 gap-2.5 sm:gap-3">
                     {[
                       { label: 'Web Development', desc: 'Custom websites & apps', color: 'from-blue-500 to-cyan-500', delay: 0 },
                       { label: 'SaaS Platforms', desc: 'Build and scale SaaS', color: 'from-purple-500 to-pink-500', delay: 0.05 },
@@ -293,11 +293,11 @@ const Hero = () => {
                         whileHover={{ scale: 1.08, y: -8 }}
                         onClick={() => window.location.href = '/services'}
                       >
-                        <div className={`relative rounded-2xl p-3 sm:p-4 bg-gradient-to-br ${svc.color} opacity-6 group-hover/serv:opacity-20 transition-all duration-300 border border-white/8 group-hover/serv:border-white/40 h-28 sm:h-32 flex flex-col items-center justify-center gap-2 cursor-pointer overflow-hidden`}>
+                        <div className={`relative rounded-xl sm:rounded-2xl p-2.5 sm:p-3 md:p-4 bg-gradient-to-br ${svc.color} opacity-6 group-hover/serv:opacity-20 transition-all duration-300 border border-white/8 group-hover/serv:border-white/40 h-24 sm:h-28 md:h-32 flex flex-col items-center justify-center gap-1 sm:gap-2 cursor-pointer overflow-hidden`}>
                           <motion.div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 opacity-0 group-hover/serv:opacity-100 transition-opacity duration-300" animate={{ x: ['-100%', '100%'] }} transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }} />
-                          <div className="relative z-10 flex flex-col items-center text-center gap-1">
-                            <span className="text-sm font-semibold text-white">{svc.label}</span>
-                            <span className="text-[11px] text-white/60">{svc.desc}</span>
+                          <div className="relative z-10 flex flex-col items-center text-center gap-0.5 sm:gap-1">
+                            <span className="text-xs sm:text-sm font-semibold text-white leading-tight">{svc.label}</span>
+                            <span className="text-[10px] sm:text-[11px] text-white/60 leading-tight">{svc.desc}</span>
                           </div>
                         </div>
                       </motion.button>
@@ -344,7 +344,7 @@ const Hero = () => {
 
             {/* Floating tech badges */}
             <motion.div
-              className="absolute -top-4 -left-4 px-4 py-2 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-xs sm:text-sm font-bold shadow-2xl shadow-blue-500/50"
+              className="absolute -top-2 sm:-top-4 -left-2 sm:-left-4 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-[10px] sm:text-xs md:text-sm font-bold shadow-2xl shadow-blue-500/50"
               animate={{
                 y: [0, -12, 0],
                 rotate: [-5, 0, 5, 0],
@@ -355,7 +355,7 @@ const Hero = () => {
             </motion.div>
 
             <motion.div
-              className="absolute -bottom-4 -right-4 px-4 py-2 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 text-white text-xs sm:text-sm font-bold shadow-2xl shadow-purple-500/50"
+              className="absolute -bottom-2 sm:-bottom-4 -right-2 sm:-right-4 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 text-white text-[10px] sm:text-xs md:text-sm font-bold shadow-2xl shadow-purple-500/50"
               animate={{
                 y: [0, 12, 0],
                 rotate: [5, 0, -5, 0],
