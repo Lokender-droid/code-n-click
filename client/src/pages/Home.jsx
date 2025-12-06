@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../components/sections/Hero';
-import AdvancedFeatures from '../components/sections/AdvancedFeatures';
+
 
 import ServicesGrid from '../components/sections/ServicesGrid';
 import WhyChooseUs from '../components/sections/WhyChooseUs';
@@ -42,7 +42,7 @@ const Home = () => {
         </script>
       </SEO>
       <Hero />
-      <AdvancedFeatures />
+
 
       <ServicesGrid />
       <WhyChooseUs />
