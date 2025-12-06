@@ -30,7 +30,7 @@ export class ChatService {
             
             Company Info:
             - Name: Code'n'Click Technologies
-            - Contact: +91 8700198968, codenclick24@gmail.com
+            - Contact: +91 8700198968, codenclicktechnologies@gmail.com
             - Location: Sector-2 Faridabad`
                     },
                     { role: 'user', content: message },

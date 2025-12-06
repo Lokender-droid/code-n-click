@@ -42,7 +42,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-white font-bold text-lg">Email Us</h3>
-                  <p className="text-gray-400">codenclick24@gmail.com</p>
+                  <p className="text-gray-400">codenclicktechnologies@gmail.com</p>
                 </div>
               </SpotlightCard>
 
